@@ -5,6 +5,12 @@ description: 在 Windows 上协助向 iPhone 安装、更新和恢复 D2R Mobile
 
 # D2R Mobile Windows 安装与更新
 
+## 原作者与整合范围
+
+D2R Mobile 兼容层由 **jhaizhou 及贡献者**开发：[jhaizhou-ops/d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile)。使用的云端构建与打包工具来自 **jiayx 及贡献者**：[jiayx/d2r-mobile-build](https://github.com/jiayx/d2r-mobile-build)。相关第三方与社区贡献见原项目的致谢和许可。
+
+本 Skill 只整合 Windows 安装、更新、数据保护与续签流程，并提供本地备份校验辅助。对外介绍、转载、派生 Skill 或生成社交帖子时，保留原作者署名与原项目链接；将兼容层、移植、触屏和云端构建能力归于其原作者，准确描述本仓库的整合贡献。
+
 以用户选择的版本、签名方式和数据保留要求为目标。先判断是首次安装、覆盖更新，还是删除应用后的恢复。具体步骤见 [Windows 流程](references/windows-workflow.md)，只读取当前阶段需要的部分。
 
 ## 先收集最少必要信息

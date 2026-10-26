@@ -1,6 +1,15 @@
 # Windows 给 iPhone 安装 D2R Mobile：可复用的 Agent Skill
 
-把一次实际跑通的 Windows → iPhone 安装、更新、存档恢复与自动续签流程，整理成 AI 可以执行的 Skill。
+**我们只做流程整合、实测与 Skill 封装。** D2R Mobile 兼容层由 **jhaizhou 及原项目贡献者**开发，云端构建工具由 **jiayx 及其贡献者**提供。
+
+## 原作者与项目来源
+
+- **D2R Mobile：jhaizhou 及贡献者** — [jhaizhou-ops/d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile)。iPhone 上运行游戏所需的兼容层、触屏交互与相关能力来自这个原项目。
+- **云端构建：jiayx 及贡献者** — [jiayx/d2r-mobile-build](https://github.com/jiayx/d2r-mobile-build)。本次使用的 GitHub Actions 构建与打包流程来自这个项目。
+- **原项目使用的第三方工作与社区贡献** — 参见上游的 [Acknowledgements](https://github.com/jhaizhou-ops/d2r-mobile#acknowledgements) 与 [依赖和许可](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/docs/DEPENDENCIES.md)。
+- **原游戏** — 《Diablo II: Resurrected》及相关内容的权利归 Blizzard Entertainment 等相应权利人所有，使用者需自备有权使用的游戏文件。
+
+本仓库新增的内容是 Windows 安装与更新步骤的整理、实测记录、供 AI 使用的 Skill，以及只读本地备份校验脚本。请优先关注和支持原作者；转载本流程或分享 Skill 时保留以上署名和原项目链接。
 
 适合有 Windows 电脑、iPhone 和自己游戏文件的玩家。AI 需要有访问本机文件、运行终端及使用安装工具的能力；纯网页聊天不能直接操作 USB 手机。
 
@@ -70,6 +79,6 @@ python skills/d2r-mobile-windows/scripts/verify_backup.py /path/to/backup-manife
 
 ## 来源与许可
 
-游戏兼容层：[jhaizhou-ops/d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile)。云端打包流程参考：[jiayx/d2r-mobile-build](https://github.com/jiayx/d2r-mobile-build)。本仓库是独立的使用流程整理，与上述项目及 Apple、Blizzard、Sideloadly 均无隶属关系。
+原作者和项目链接已在首页开头列明。D2R Mobile 与云端构建工具的代码及其贡献属于各自作者和贡献者；本仓库是独立的流程整合，与上述项目及 Apple、Blizzard、Sideloadly 均无隶属关系。
 
-本仓库原创说明与辅助脚本使用 [MIT License](LICENSE)。游戏、系统工具及其他项目遵循各自许可。
+本仓库自行编写的整合说明与辅助脚本使用 [MIT License](LICENSE)。此许可只覆盖本仓库新增内容；游戏、系统工具及原项目遵循各自许可与署名。

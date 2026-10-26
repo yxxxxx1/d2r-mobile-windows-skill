@@ -4,17 +4,29 @@
 
 ## 主帖
 
-我让 AI 在 Windows 上，把《暗黑2重制版》装进了 iPhone。
+用 Windows + AI 跑通了《暗黑2重制版》的 iPhone 安装。
 
-云端编译 → Sideloadly 签名 → USB 导资源，连存档恢复和自动续签也跑通了。
+先谢原作者：D2R Mobile 来自 jhaizhou 及贡献者，云端构建来自 jiayx 及贡献者。
 
-现在把流程整理成开源 Skill，复制安装指令就能交给 AI 按步骤处理。
+我们只把安装、备份、资源导入和续签流程整合成 Skill。
 
-需要自备游戏文件，Apple 登录和手机确认仍由本人完成。
+自备游戏文件，Apple 登录与手机确认仍需本人完成。
 
 https://github.com/yxxxxx1/d2r-mobile-windows-skill
 
-## 回复 1：安装 Skill
+## 回复 1：原作者与原项目
+
+核心能力来自原作者和社区，感谢：
+
+D2R Mobile：jhaizhou 及贡献者
+https://github.com/jhaizhou-ops/d2r-mobile
+
+云端构建：jiayx 及贡献者
+https://github.com/jiayx/d2r-mobile-build
+
+我们做的是流程整合、实测和 Skill 封装。请优先关注和支持原项目。
+
+## 回复 2：安装 Skill
 
 复制这条命令，按提示选你的 AI 工具：
 
@@ -26,7 +38,7 @@ npx skills add yxxxxx1/d2r-mobile-windows-skill --skill d2r-mobile-windows
 
 电脑需要 Node.js 22.20+，AI 需要本机文件与设备操作能力。
 
-## 回复 2：实测与提醒
+## 回复 3：实测与提醒
 
 实测：Windows + iPhone 13 Pro Max，2.0.0 主分支修复版。
 

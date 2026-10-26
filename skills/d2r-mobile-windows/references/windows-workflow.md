@@ -1,5 +1,7 @@
 # Windows 实施流程
 
+本说明整合原作者的工作：D2R Mobile 由 [jhaizhou 及贡献者](https://github.com/jhaizhou-ops/d2r-mobile)开发，云端构建与打包由 [jiayx 及贡献者](https://github.com/jiayx/d2r-mobile-build)提供。我们的贡献是流程整理、实测、Skill 封装和备份校验辅助；分享本说明时保留署名及原项目链接。
+
 ## 信息来源与版本
 
 先查当前的 [d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile) 和 Releases；需要云端构建时查 [d2r-mobile-build](https://github.com/jiayx/d2r-mobile-build) 当时的 README 与工作流，不直接套用旧输入。Sideloadly 从 [官方网站](https://sideloadly.io/) 获取。记录核对日期及完整 SHA。
