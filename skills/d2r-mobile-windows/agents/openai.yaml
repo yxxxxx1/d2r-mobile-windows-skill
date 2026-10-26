@@ -1,0 +1,4 @@
+interface:
+  display_name: "D2R Mobile Windows 安装助手"
+  short_description: "协助 Windows 给 iPhone 装 D2R，备份存档、校验资源并核对自动续签"
+  default_prompt: "使用 $d2r-mobile-windows，帮我在 Windows 上给 iPhone 安装或更新 D2R Mobile，并验证存档、资源与自动续签。"
