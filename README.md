@@ -73,4 +73,3 @@ python skills/d2r-mobile-windows/scripts/verify_backup.py /path/to/backup-manife
 游戏兼容层：[jhaizhou-ops/d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile)。云端打包流程参考：[jiayx/d2r-mobile-build](https://github.com/jiayx/d2r-mobile-build)。本仓库是独立的使用流程整理，与上述项目及 Apple、Blizzard、Sideloadly 均无隶属关系。
 
 本仓库原创说明与辅助脚本使用 [MIT License](LICENSE)。游戏、系统工具及其他项目遵循各自许可。
-

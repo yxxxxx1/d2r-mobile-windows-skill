@@ -46,4 +46,3 @@ description: 在 Windows 上协助向 iPhone 安装、更新和恢复 D2R Mobile
 - 用户实际能打开游戏、看到预期角色并进入游戏。有提示先完成信任和开发者模式，不能把“安装 Done”当作游戏运行成功。
 
 本地存档清单可用 `python scripts/verify_backup.py <backup-manifest.json>` 校验。该脚本仅校验本地文件，不连接手机或创建备份。清单格式和调用方法见 [Windows 流程](references/windows-workflow.md#本地备份清单)。
-

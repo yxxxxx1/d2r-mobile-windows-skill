@@ -43,4 +43,3 @@ npx skills add yxxxxx1/d2r-mobile-windows-skill --skill d2r-mobile-windows
 ```text
 使用 $skill-installer 安装 https://github.com/yxxxxx1/d2r-mobile-windows-skill/tree/main/skills/d2r-mobile-windows 。安装后告诉我如何调用。
 ```
-
