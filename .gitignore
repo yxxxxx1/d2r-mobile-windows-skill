@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+dist/
+.venv/
+.local/
+*.ipa
+*.data
+*.d2s
+prod.keys
+*.p12
+*.mobileprovision
+.env
+
