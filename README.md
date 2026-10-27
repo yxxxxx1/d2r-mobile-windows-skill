@@ -45,6 +45,19 @@ Codex 用户也可以复制下面这句，发给 Codex：
 - 经 House Arrest／AFC 备份存档、校验文件、导入匹配的 Data 与 Legacy 资源。
 - 更新时保持签名账号和最终 bundle ID；安装后校验存档及资源。
 - 核对 Sideloadly 自动续签及新版缓存；无线连接单独验证。
+- 按用户选择导入社区离线角色，先备份、检查重名，导入后核对新旧存档。
+
+## 可选：24 个社区角色存档
+
+随 Skill 附带 [24 角色存档包](skills/d2r-mobile-windows/assets/community-characters-v105.zip)，涵盖七个传统职业，等级 81–93。原始角色由 **[P3N9U1N](https://github.com/P3N9U1N/diablo2-savegames)** 以 MIT 许可公开分享；格式转换使用 **[ResurrectedTrader/D2SSharp](https://github.com/ResurrectedTrader/D2SSharp)**。我们只做格式转换、校验和目录整理，原作者许可随包保留。
+
+**完全可选。** 安装 Skill 或更新应用不会自动导入这批角色，也不会替换已有角色。完整角色列表、摘要、兼容范围和备份后追加导入步骤见 [可选存档说明](skills/d2r-mobile-windows/references/community-saves.md)。这些角色已完成本地格式校验和一次设备传输校验，尚未逐一实机进局验收。
+
+可复制给 AI：
+
+```text
+使用 $d2r-mobile-windows，先列出 Skill 自带的 24 个可选社区角色，让我选择要导入的角色。导入前备份并校验手机最新存档，检查格式和同名冲突；只追加选中的角色目录，不覆盖现有角色或共享仓库，完成后读回核对。不要重新安装游戏，也不要改变自动续签设置。
+```
 
 ## 先准备什么
 
@@ -53,7 +66,7 @@ Codex 用户也可以复制下面这句，发给 Codex：
 3. 自己有权使用的游戏文件，以及匹配当前源码的构建输入／资源。使用免费签名时仍需要 Apple 账号；可以考虑单独账号并开启双重认证。
 4. 足够的电脑与手机空间。手机空间应覆盖解压后的资源、应用和安装临时文件，不能只看下载包大小。
 
-账号密码、验证码在本机软件界面输入。该 Skill 不提供游戏文件、密钥、证书、IPA 或游戏资源下载镜像。
+账号密码、验证码在本机软件界面输入。该 Skill 不提供游戏程序、密钥、证书、IPA 或游戏资源下载镜像；可选社区角色包单独保留原作者许可。
 
 ## 实测记录与边界
 
@@ -68,6 +81,7 @@ Codex 用户也可以复制下面这句，发给 Codex：
 - [SKILL.md](skills/d2r-mobile-windows/SKILL.md)：AI 的任务入口。
 - [Windows 流程](skills/d2r-mobile-windows/references/windows-workflow.md)：备份、安装、资源与续签细节。
 - [备份校验脚本](skills/d2r-mobile-windows/scripts/verify_backup.py)：只读校验本地存档备份，不连接手机。
+- [可选社区存档](skills/d2r-mobile-windows/references/community-saves.md)：24 个带装备的角色，按需选择后备份、校验并追加导入。
 - [X 帖子草稿](docs/x-post.md)：主帖、回复与可复制命令。
 
 ```sh
@@ -81,4 +95,4 @@ python skills/d2r-mobile-windows/scripts/verify_backup.py /path/to/backup-manife
 
 原作者和项目链接已在首页开头列明。D2R Mobile 与云端构建工具的代码及其贡献属于各自作者和贡献者；本仓库是独立的流程整合，与上述项目及 Apple、Blizzard、Sideloadly 均无隶属关系。
 
-本仓库自行编写的整合说明与辅助脚本使用 [MIT License](LICENSE)。此许可只覆盖本仓库新增内容；游戏、系统工具及原项目遵循各自许可与署名。
+本仓库自行编写的整合说明与辅助脚本使用 [MIT License](LICENSE)。此许可只覆盖本仓库新增内容；社区角色包遵循随附的 [P3N9U1N MIT 许可](skills/d2r-mobile-windows/assets/community-characters-LICENSE.txt)，游戏、系统工具及原项目遵循各自许可与署名。
