@@ -58,6 +58,16 @@ python scripts/verify_backup.py /path/to/backup-manifest.json
 
 ## 3. 准备 IPA
 
+### 资源准备与社区检索线索
+
+用户补充的资源检索网站：[Switch520（Gamer520）](https://www.gamer520.com/)。可用站名与游戏名称检索相关 Switch 版资源信息；它是第三方社区线索，不是 D2R Mobile、jiayx 构建项目或本 Skill 的官方资源站。我们未下载、解包或验证该站的游戏包，也不将页面标注的版本当作文件校验结果。
+
+使用用户自己有权使用的材料，以当时[上游游戏文件说明](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/docs/GAME_FILES.md)为准。2026-10-27 查询的上游参考为包含 Reign of the Warlock 扩展的 Switch 1.0.34.0（对应 PC 3.3.94012）；后续构建前需重新核对。实际检查版本与扩展内容、准备后的 ExeFS/RomFS 或资源目录、所需构建输入及摘要，不能只看下载文件名。
+
+NSP/NSZ/XCI 等发行包、解包后的程序与资源、生成的 Data／Legacy 目录、可安装 IPA 是不同阶段的材料。先确定用户已有哪一种，再走上游要求的准备流程；不要把发行包直接拖进 Sideloadly 或把它改名为 IPA。此说明只补充检索线索，不提供游戏包、密钥或下载镜像。
+
+### 构建和产物检查
+
 - 已有匹配 IPA：核对其来源、预期摘要、ZIP CRC、Info.plist 的最低系统、版本和标识，确认设备可用。
 - 只有源码或构建输入：Windows 不进行原生 Xcode 编译；可在用户授权的私有仓库使用经过检查的云端 macOS 工作流，或其可用的 Mac。
 - 使用完整源码 SHA；工作流实际引用的工具 SHA、输入摘要与构建报告也需记录。解析主分支后不能在构建过程中悄悄换目标。
@@ -65,7 +75,7 @@ python scripts/verify_backup.py /path/to/backup-manifest.json
 - 保留工作流完整的兼容性、原生编译、产物摘要及发布检查。所有相关任务成功后再安装。
 - 比较构建报告中的游戏程序、资源清单和 Legacy 摘要，决定原资源能否复用。资源版本不兼容时先解决，不装一个已知缺材料的包。
 
-本次参考流程用 `Build IPA` 的 `source_repository`、`source_ref` 和 `prepared_input` 输入。后续字段与格式以当时工作流为准。构建材料应来自用户有权处理的文件；本 Skill 不提供公共游戏材料地址。
+本次参考流程用 `Build IPA` 的 `source_repository`、`source_ref` 和 `prepared_input` 输入。后续字段与格式以当时工作流为准。构建材料应来自用户有权处理的文件；本 Skill 不托管游戏材料。
 
 ## 4. Sideloadly 安装
 
